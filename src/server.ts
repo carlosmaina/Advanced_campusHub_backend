@@ -42,7 +42,6 @@ App.use(express.json());
 App.use(
   cors({
     origin: [
-      "https://campushub-mq9h.onrender.com",
       "https://campus-hub-frontend-five.vercel.app",
     ],
     allowedHeaders: ["authorization", "Content-Type"],
