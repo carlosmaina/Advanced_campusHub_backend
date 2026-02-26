@@ -46,7 +46,7 @@ class SignUpFlow {
         httpOnly: true,
         maxAge: 60 * 1000 * 5,
         secure: true, // only over HTTPS sameSite: "strict", // prevents CSRF
-        sameSite: "strict",
+        sameSite: "none",
       });
       res.status(200).json({ message: "OTP created" });
     } catch (error) {
